@@ -1,0 +1,804 @@
+D, [2011-04-29T22:55:39.292051 #68087] DEBUG -- :   [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-04-29T22:55:43.113956 #68089] DEBUG -- :   [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-04-29T22:55:43.114255 #68089] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-29T22:55:43.114487 #68089] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-04-29T22:55:43.114686 #68089] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+D, [2011-04-29T22:55:43.117448 #68089] DEBUG -- :   [1m[36mSQL (2.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2011-04-29T22:55:43.117666 #68089] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2011-04-29T22:55:43.118750 #68089] DEBUG -- :   [1m[36mSQL (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2011-04-29T22:55:43.119022 #68089] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-29T22:55:43.119444 #68089] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-04-29T22:55:43.120027 #68089] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+I, [2011-04-29T22:55:43.120091 #68089]  INFO -- : Migrating to CreatePeople (1)
+D, [2011-04-29T22:55:43.122231 #68089] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mCREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+D, [2011-04-29T22:55:43.122289 #68089] DEBUG -- : SQLite3::SQLException: table "people" already exists: CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+D, [2011-04-29T22:56:10.001213 #68091] DEBUG -- :   [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-04-29T22:56:10.001509 #68091] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-29T22:56:10.002250 #68091] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+D, [2011-04-29T22:56:10.002473 #68091] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-29T22:56:10.002845 #68091] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+D, [2011-04-29T22:56:10.003066 #68091] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-29T22:56:10.003587 #68091] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+I, [2011-04-29T22:56:10.003644 #68091]  INFO -- : Migrating to CreatePeople (1)
+D, [2011-04-29T22:56:10.003814 #68091] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+D, [2011-04-29T22:56:10.006196 #68091] DEBUG -- :   [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+D, [2011-04-29T22:56:10.006901 #68091] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('1')
+D, [2011-04-29T23:27:06.881140 #68144] DEBUG -- :   [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-04-29T23:27:06.881468 #68144] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-29T23:27:06.882415 #68144] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+D, [2011-04-29T23:27:06.882702 #68144] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-29T23:27:06.883138 #68144] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+D, [2011-04-29T23:27:06.883383 #68144] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-29T23:27:06.910756 #68144] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+I, [2011-04-29T23:27:06.910855 #68144]  INFO -- : Migrating to CreatePeople (1)
+D, [2011-04-29T23:27:06.911071 #68144] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+D, [2011-04-29T23:27:06.913324 #68144] DEBUG -- :   [1m[36mSQL (0.7ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-04-29T23:27:06.914144 #68144] DEBUG -- :   [1m[35mAREL (0.2ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '1'
+D, [2011-04-29T23:27:13.386946 #68146] DEBUG -- :   [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-04-29T23:27:13.387279 #68146] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-29T23:27:13.388150 #68146] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+D, [2011-04-29T23:27:13.388418 #68146] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-29T23:27:13.388844 #68146] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+D, [2011-04-29T23:27:13.389078 #68146] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-29T23:27:13.389689 #68146] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+I, [2011-04-29T23:27:13.389752 #68146]  INFO -- : Migrating to CreatePeople (1)
+D, [2011-04-29T23:27:13.389931 #68146] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+D, [2011-04-29T23:27:13.392953 #68146] DEBUG -- :   [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+D, [2011-04-29T23:27:13.394707 #68146] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('1')
+D, [2011-04-30T10:26:48.898873 #68754] DEBUG -- :   [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-04-30T10:26:48.921095 #68754] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:26:48.921768 #68754] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+I, [2011-04-30T10:26:48.921843 #68754]  INFO -- : Migrating to CreatePeople (1)
+D, [2011-04-30T10:26:54.628888 #68756] DEBUG -- :   [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-04-30T10:26:54.629199 #68756] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:26:54.629787 #68756] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+D, [2011-04-30T10:26:54.630029 #68756] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:26:54.630420 #68756] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+D, [2011-04-30T10:26:54.630662 #68756] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:26:54.631197 #68756] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+I, [2011-04-30T10:26:54.631262 #68756]  INFO -- : Migrating to CreatePeople (1)
+D, [2011-04-30T10:30:58.759447 #68788] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:30:58.762713 #68788] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:30:58.767134 #68788] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (17, 'usman')[0m
+D, [2011-04-30T10:30:58.770743 #68788] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:30:58.771185 #68788] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:31:01.504827 #68789] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:31:01.507999 #68789] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:31:01.512465 #68789] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (18, 'usman')[0m
+D, [2011-04-30T10:31:01.515956 #68789] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:31:01.516399 #68789] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:31:02.816987 #68790] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:31:02.820345 #68790] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:31:02.824773 #68790] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (19, 'usman')[0m
+D, [2011-04-30T10:31:02.828872 #68790] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:31:02.829316 #68790] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:31:04.187663 #68791] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:31:04.190881 #68791] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:31:04.195452 #68791] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (20, 'usman')[0m
+D, [2011-04-30T10:31:04.199153 #68791] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:31:04.199601 #68791] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:31:05.249557 #68792] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:31:05.252746 #68792] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:31:05.257109 #68792] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (21, 'usman')[0m
+D, [2011-04-30T10:31:05.261253 #68792] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:31:05.261703 #68792] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:31:06.232392 #68793] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:31:06.235813 #68793] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:31:06.240280 #68793] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (22, 'usman')[0m
+D, [2011-04-30T10:31:06.244324 #68793] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:31:06.244768 #68793] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:31:07.305507 #68794] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:31:07.308683 #68794] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:31:07.313146 #68794] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (23, 'usman')[0m
+D, [2011-04-30T10:31:07.316382 #68794] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:31:07.316880 #68794] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:31:08.296669 #68795] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:31:08.299842 #68795] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:31:08.304265 #68795] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (24, 'usman')[0m
+D, [2011-04-30T10:31:08.309386 #68795] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:31:08.309888 #68795] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:31:09.301473 #68796] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:31:09.304684 #68796] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:31:09.309408 #68796] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (25, 'usman')[0m
+D, [2011-04-30T10:31:09.312573 #68796] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:31:09.313002 #68796] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:31:10.566866 #68797] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:31:10.570289 #68797] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:31:10.574754 #68797] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (26, 'usman')[0m
+D, [2011-04-30T10:31:10.578970 #68797] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:31:10.579463 #68797] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:31:11.682643 #68798] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:31:11.685875 #68798] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:31:11.690348 #68798] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (27, 'usman')[0m
+D, [2011-04-30T10:31:11.693746 #68798] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:31:11.694212 #68798] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:31:12.697086 #68799] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:31:12.700283 #68799] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:31:12.704668 #68799] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (28, 'usman')[0m
+D, [2011-04-30T10:31:12.708799 #68799] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:31:12.709266 #68799] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:31:13.698070 #68800] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:31:13.701258 #68800] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:31:13.705636 #68800] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (29, 'usman')[0m
+D, [2011-04-30T10:31:13.709926 #68800] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:31:13.710367 #68800] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:31:14.719120 #68801] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:31:14.722553 #68801] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:31:14.727176 #68801] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (30, 'usman')[0m
+D, [2011-04-30T10:31:14.730663 #68801] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:31:14.731110 #68801] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:31:15.695689 #68802] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:31:15.698957 #68802] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:31:15.703592 #68802] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (31, 'usman')[0m
+D, [2011-04-30T10:31:15.707980 #68802] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:31:15.708541 #68802] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:31:16.600574 #68803] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:31:16.603865 #68803] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:31:16.608268 #68803] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (32, 'usman')[0m
+D, [2011-04-30T10:31:16.612659 #68803] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:31:16.613261 #68803] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:31:17.539382 #68804] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:31:17.542619 #68804] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:31:17.547178 #68804] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (33, 'usman')[0m
+D, [2011-04-30T10:31:17.551688 #68804] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:31:17.552135 #68804] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:31:18.493104 #68805] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:31:18.496336 #68805] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:31:18.500725 #68805] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (34, 'usman')[0m
+D, [2011-04-30T10:31:18.504860 #68805] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:31:18.505311 #68805] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:31:19.447411 #68806] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:31:19.450634 #68806] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:31:19.455130 #68806] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (35, 'usman')[0m
+D, [2011-04-30T10:31:19.458612 #68806] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:31:19.459139 #68806] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:32:42.143003 #68809] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:32:42.146354 #68809] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:32:42.150861 #68809] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (36, 'usman')[0m
+D, [2011-04-30T10:32:42.154208 #68809] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:32:42.154726 #68809] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:32:42.919850 #68811] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:32:42.923010 #68811] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:32:42.927514 #68811] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (37, 'usman')[0m
+D, [2011-04-30T10:32:42.931125 #68811] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:32:42.931566 #68811] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:32:43.625585 #68812] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:32:43.628844 #68812] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:32:43.633248 #68812] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (38, 'usman')[0m
+D, [2011-04-30T10:32:43.635556 #68812] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:32:43.635981 #68812] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:32:46.142817 #68813] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:32:46.147376 #68813] DEBUG -- :   [1m[35mSQL (1.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:32:46.152853 #68813] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (39, 'usman')[0m
+D, [2011-04-30T10:32:46.157518 #68813] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:32:46.158341 #68813] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:32:47.702047 #68814] DEBUG -- :   [1m[36mPerson Load (0.8ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:32:47.706575 #68814] DEBUG -- :   [1m[35mSQL (0.6ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:32:47.711666 #68814] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (40, 'usman')[0m
+D, [2011-04-30T10:32:47.716087 #68814] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:32:47.716938 #68814] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:32:48.549435 #68815] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:32:48.553271 #68815] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:32:48.558469 #68815] DEBUG -- :   [1m[36mAREL (0.7ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (41, 'usman')[0m
+D, [2011-04-30T10:32:48.563164 #68815] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:32:48.563984 #68815] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:32:49.407681 #68816] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:32:49.410974 #68816] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:32:49.415435 #68816] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (42, 'usman')[0m
+D, [2011-04-30T10:32:49.419022 #68816] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:32:49.419520 #68816] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:32:50.086323 #68817] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:32:50.089612 #68817] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:32:50.094484 #68817] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (43, 'usman')[0m
+D, [2011-04-30T10:32:50.098865 #68817] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:32:50.099309 #68817] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:32:50.766991 #68818] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:32:50.770227 #68818] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:32:50.774687 #68818] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (44, 'usman')[0m
+D, [2011-04-30T10:32:50.778315 #68818] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:32:50.778760 #68818] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:32:51.445950 #68819] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:32:51.449162 #68819] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:32:51.453643 #68819] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (45, 'usman')[0m
+D, [2011-04-30T10:32:51.457083 #68819] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:32:51.457518 #68819] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:33:02.631708 #68820] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:33:02.634952 #68820] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:33:02.639457 #68820] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman', 46)[0m
+D, [2011-04-30T10:33:02.642052 #68820] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:33:02.642487 #68820] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:33:05.381785 #68821] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:33:05.385081 #68821] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:33:05.389793 #68821] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman', 47)[0m
+D, [2011-04-30T10:33:05.393311 #68821] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:33:05.393753 #68821] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:33:06.676067 #68822] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:33:06.679909 #68822] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:33:06.684631 #68822] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman', 48)[0m
+D, [2011-04-30T10:33:06.726380 #68822] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:33:06.727321 #68822] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:33:07.965914 #68823] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:33:07.969356 #68823] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:33:07.974029 #68823] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman', 49)[0m
+D, [2011-04-30T10:33:07.976844 #68823] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:33:07.977314 #68823] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:33:08.791845 #68824] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:33:08.795078 #68824] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:33:08.799672 #68824] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman', 50)[0m
+D, [2011-04-30T10:33:08.804210 #68824] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:33:08.804703 #68824] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:33:09.909782 #68825] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:33:09.913040 #68825] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:33:09.917578 #68825] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman', 51)[0m
+D, [2011-04-30T10:33:09.921582 #68825] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:33:09.922271 #68825] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:33:10.880984 #68826] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:33:10.884281 #68826] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:33:10.889482 #68826] DEBUG -- :   [1m[36mAREL (0.9ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman', 52)[0m
+D, [2011-04-30T10:33:10.892633 #68826] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:33:10.893079 #68826] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:34:39.125267 #68827] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:34:39.128744 #68827] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:34:39.149765 #68827] DEBUG -- :   [1m[36mAREL (17.0ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (53, 'usman')[0m
+D, [2011-04-30T10:34:39.153125 #68827] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:34:39.153622 #68827] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:34:40.751672 #68829] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:34:40.755305 #68829] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:34:40.759756 #68829] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (54, 'usman')[0m
+D, [2011-04-30T10:34:40.763913 #68829] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:34:40.764348 #68829] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people" LIMIT 1[0m
+D, [2011-04-30T10:35:04.961655 #68830] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:35:04.965180 #68830] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:35:04.969685 #68830] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (55, 'usman')[0m
+D, [2011-04-30T10:35:04.973395 #68830] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:35:04.974567 #68830] DEBUG -- :   [1m[36mPerson Load (0.9ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-04-30T10:35:32.942766 #68833] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:35:32.946272 #68833] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:35:32.950631 #68833] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (56, 'usman')[0m
+D, [2011-04-30T10:35:32.954237 #68833] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:35:32.955405 #68833] DEBUG -- :   [1m[36mPerson Load (0.9ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-04-30T10:35:35.850216 #68834] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:35:35.853867 #68834] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:35:35.858375 #68834] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (57, 'usman')[0m
+D, [2011-04-30T10:35:35.862004 #68834] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:35:35.863202 #68834] DEBUG -- :   [1m[36mPerson Load (0.9ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-04-30T10:35:55.451731 #68835] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:35:55.455284 #68835] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:35:55.459798 #68835] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (58, 'usman')[0m
+D, [2011-04-30T10:35:55.463510 #68835] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:35:55.464722 #68835] DEBUG -- :   [1m[36mPerson Load (0.9ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-04-30T10:36:35.731878 #68836] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:36:42.904626 #68838] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:36:42.908213 #68838] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:36:42.913238 #68838] DEBUG -- :   [1m[36mAREL (0.9ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman58', 59)[0m
+D, [2011-04-30T10:36:42.917503 #68838] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:36:42.918743 #68838] DEBUG -- :   [1m[36mPerson Load (0.9ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-04-30T10:36:45.327713 #68839] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:36:45.331335 #68839] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:36:45.335934 #68839] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman5859', 60)[0m
+D, [2011-04-30T10:36:45.339934 #68839] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:36:45.341196 #68839] DEBUG -- :   [1m[36mPerson Load (1.0ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-04-30T10:36:46.489576 #68840] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:36:46.493170 #68840] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:36:46.497679 #68840] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman585960', 61)[0m
+D, [2011-04-30T10:36:46.501904 #68840] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:36:46.503158 #68840] DEBUG -- :   [1m[36mPerson Load (1.0ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-04-30T10:36:47.522107 #68841] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:36:47.525689 #68841] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:36:47.530141 #68841] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman58596061', 62)[0m
+D, [2011-04-30T10:36:47.534535 #68841] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:36:47.535827 #68841] DEBUG -- :   [1m[36mPerson Load (1.0ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-04-30T10:36:48.511073 #68842] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:36:48.514741 #68842] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:36:48.519345 #68842] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman5859606162', 63)[0m
+D, [2011-04-30T10:36:48.523706 #68842] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:36:48.525007 #68842] DEBUG -- :   [1m[36mPerson Load (1.0ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-04-30T10:37:02.933935 #68843] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:37:02.937687 #68843] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:37:02.942164 #68843] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman63', 64)[0m
+D, [2011-04-30T10:37:02.946279 #68843] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:37:02.947638 #68843] DEBUG -- :   [1m[36mPerson Load (1.0ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-04-30T10:37:04.493826 #68844] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:37:04.497408 #68844] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:37:04.501926 #68844] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman64', 65)[0m
+D, [2011-04-30T10:37:04.507370 #68844] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:37:04.508694 #68844] DEBUG -- :   [1m[36mPerson Load (1.0ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-04-30T10:37:05.451648 #68845] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:37:05.455243 #68845] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:37:05.459817 #68845] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman65', 66)[0m
+D, [2011-04-30T10:37:05.463885 #68845] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:37:05.465252 #68845] DEBUG -- :   [1m[36mPerson Load (1.1ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-04-30T10:37:10.233670 #68846] DEBUG -- :   [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-04-30T10:37:10.234006 #68846] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:37:10.234592 #68846] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+D, [2011-04-30T10:37:10.234831 #68846] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:37:10.235215 #68846] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+D, [2011-04-30T10:37:10.235457 #68846] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:37:10.236004 #68846] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+I, [2011-04-30T10:37:10.236072 #68846]  INFO -- : Migrating to CreatePeople (1)
+D, [2011-04-30T10:37:10.236253 #68846] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+D, [2011-04-30T10:37:10.273076 #68846] DEBUG -- :   [1m[36mSQL (0.6ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-04-30T10:37:10.273837 #68846] DEBUG -- :   [1m[35mAREL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '1'
+D, [2011-04-30T10:37:12.829920 #68847] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:37:12.830008 #68847] DEBUG -- : SQLite3::SQLException: no such table: people: SELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1
+D, [2011-04-30T10:37:17.737077 #68848] DEBUG -- :   [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-04-30T10:37:17.737379 #68848] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:37:17.737933 #68848] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+D, [2011-04-30T10:37:17.738149 #68848] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:37:17.738512 #68848] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+D, [2011-04-30T10:37:17.738732 #68848] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:37:17.739258 #68848] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+D, [2011-04-30T10:37:21.001647 #68849] DEBUG -- :   [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-04-30T10:37:21.001977 #68849] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:37:21.002539 #68849] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+D, [2011-04-30T10:37:21.002758 #68849] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:37:21.003125 #68849] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+D, [2011-04-30T10:37:21.003347 #68849] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:37:21.003866 #68849] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+I, [2011-04-30T10:37:21.003923 #68849]  INFO -- : Migrating to CreatePeople (1)
+D, [2011-04-30T10:37:21.004096 #68849] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+D, [2011-04-30T10:37:21.006695 #68849] DEBUG -- :   [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+D, [2011-04-30T10:37:21.007447 #68849] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('1')
+D, [2011-04-30T10:37:24.815112 #68850] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:37:24.818795 #68850] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:37:24.823205 #68850] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("id", "name") VALUES (1, 'usman')[0m
+D, [2011-04-30T10:37:24.827698 #68850] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:37:24.828151 #68850] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-04-30T10:37:27.971067 #68851] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:37:27.974692 #68851] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:37:27.979154 #68851] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman1', 2)[0m
+D, [2011-04-30T10:37:27.983597 #68851] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:37:27.984043 #68851] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-04-30T10:37:29.478237 #68852] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:37:29.482669 #68852] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:37:29.487463 #68852] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman2', 3)[0m
+D, [2011-04-30T10:37:29.491130 #68852] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:37:29.491783 #68852] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-04-30T10:37:30.569387 #68854] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:37:30.575230 #68854] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:37:30.579874 #68854] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman3', 4)[0m
+D, [2011-04-30T10:37:30.599163 #68854] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:37:30.600077 #68854] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-04-30T10:37:56.224434 #68856] DEBUG -- :   [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-04-30T10:37:56.224744 #68856] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:37:56.225312 #68856] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+D, [2011-04-30T10:37:56.225552 #68856] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:37:56.225937 #68856] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+D, [2011-04-30T10:37:56.226191 #68856] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:37:56.226759 #68856] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+I, [2011-04-30T10:37:56.226829 #68856]  INFO -- : Migrating to CreatePeople (1)
+D, [2011-04-30T10:37:56.227005 #68856] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+D, [2011-04-30T10:37:56.229001 #68856] DEBUG -- :   [1m[36mSQL (0.6ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-04-30T10:37:56.229714 #68856] DEBUG -- :   [1m[35mAREL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '1'
+D, [2011-04-30T10:37:58.104539 #68857] DEBUG -- :   [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-04-30T10:37:58.104835 #68857] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:37:58.105379 #68857] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+D, [2011-04-30T10:37:58.105595 #68857] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:37:58.105954 #68857] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+D, [2011-04-30T10:37:58.106175 #68857] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:37:58.106685 #68857] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+I, [2011-04-30T10:37:58.106741 #68857]  INFO -- : Migrating to CreatePeople (1)
+D, [2011-04-30T10:37:58.106913 #68857] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+D, [2011-04-30T10:37:58.109182 #68857] DEBUG -- :   [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+D, [2011-04-30T10:37:58.109879 #68857] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('1')
+D, [2011-04-30T10:38:00.356297 #68858] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:38:00.360066 #68858] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:38:00.364650 #68858] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman1', 1)[0m
+D, [2011-04-30T10:38:00.368407 #68858] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:38:00.368862 #68858] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-04-30T10:38:02.855284 #68859] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:38:02.858804 #68859] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:38:02.863191 #68859] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman2', 2)[0m
+D, [2011-04-30T10:38:02.867106 #68859] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:38:02.867552 #68859] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-04-30T10:38:03.913912 #68860] DEBUG -- :   [1m[36mPerson Load (0.7ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-04-30T10:38:03.917728 #68860] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-04-30T10:38:03.922292 #68860] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman3', 3)[0m
+D, [2011-04-30T10:38:03.926627 #68860] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-04-30T10:38:03.927088 #68860] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-05-21T19:39:08.925620 #6361] DEBUG -- :   [1m[36mSQL (1.9ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-05-21T19:39:08.926119 #6361] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-05-21T19:39:08.927260 #6361] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+I, [2011-05-21T19:39:08.927325 #6361]  INFO -- : Migrating to CreatePeople (1)
+D, [2011-05-21T19:39:15.823683 #6362] DEBUG -- :   [1m[36mPerson Load (0.7ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-05-21T19:39:15.828410 #6362] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-05-21T19:39:15.841929 #6362] DEBUG -- :   [1m[36mAREL (1.4ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman4', 4)[0m
+D, [2011-05-21T19:39:15.843534 #6362] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-05-21T19:39:15.843943 #6362] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-05-21T19:40:28.181942 #6368] DEBUG -- :   [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-05-21T19:40:28.182193 #6368] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+D, [2011-05-21T19:40:28.183263 #6368] DEBUG -- :   [1m[36mSQL (0.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2011-05-21T19:40:28.183435 #6368] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2011-05-21T19:40:28.184098 #6368] DEBUG -- :   [1m[36mSQL (0.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2011-05-21T19:40:28.184309 #6368] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-05-21T19:40:28.184720 #6368] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-05-21T19:40:28.185941 #6368] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+I, [2011-05-21T19:40:28.186001 #6368]  INFO -- : Migrating to CreatePeople (1)
+D, [2011-05-21T19:40:28.188564 #6368] DEBUG -- :   [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+D, [2011-05-21T19:40:28.189204 #6368] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('1')
+D, [2011-05-21T19:40:51.860237 #6373] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-05-21T19:40:51.864917 #6373] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-05-21T19:40:51.875661 #6373] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman1', 1)[0m
+D, [2011-05-21T19:40:51.877442 #6373] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-05-21T19:40:51.877838 #6373] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-05-21T19:41:01.525094 #6374] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-05-21T19:41:01.529723 #6374] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-05-21T19:41:01.540359 #6374] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman2', 2)[0m
+D, [2011-05-21T19:41:01.542066 #6374] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-05-21T19:41:01.542457 #6374] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-05-21T19:41:03.417466 #6375] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-05-21T19:41:03.422199 #6375] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-05-21T19:41:03.432965 #6375] DEBUG -- :   [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman3', 3)[0m
+D, [2011-05-21T19:41:03.434624 #6375] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-05-21T19:41:03.435014 #6375] DEBUG -- :   [1m[36mPerson Load (0.1ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-05-21T19:42:29.750660 #6378] DEBUG -- :   [1m[36mPerson Load (0.7ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-05-21T19:42:29.755389 #6378] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-05-21T19:42:29.766066 #6378] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman4', 4)[0m
+D, [2011-05-21T19:42:29.768261 #6378] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-05-21T19:42:29.768665 #6378] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-05-21T19:42:42.410229 #6379] DEBUG -- :   [1m[36mPerson Load (0.7ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-05-21T19:42:42.415001 #6379] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-05-21T19:42:42.425722 #6379] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman5', 5)[0m
+D, [2011-05-21T19:42:42.448740 #6379] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-05-21T19:42:42.449184 #6379] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-05-21T19:42:57.544463 #6381] DEBUG -- :   [1m[36mPerson Load (0.7ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-05-21T19:42:57.549612 #6381] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-05-21T19:42:57.560612 #6381] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman6', 6)[0m
+D, [2011-05-21T19:42:57.579904 #6381] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-05-21T19:42:57.580336 #6381] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-05-21T19:43:18.762991 #6382] DEBUG -- :   [1m[36mPerson Load (0.7ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-05-21T19:43:18.767682 #6382] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-05-21T19:43:18.778286 #6382] DEBUG -- :   [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman7', 7)[0m
+D, [2011-05-21T19:43:18.797800 #6382] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "people"
+D, [2011-05-21T19:43:18.798437 #6382] DEBUG -- :   [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+D, [2011-05-21T19:43:41.760967 #6383] DEBUG -- :   [1m[36mPerson Load (0.7ms)[0m  [1mSELECT "people".* FROM "people" ORDER BY people.id DESC LIMIT 1[0m
+D, [2011-05-21T19:43:41.765679 #6383] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-05-21T19:43:41.776808 #6383] DEBUG -- :   [1m[36mAREL (0.8ms)[0m  [1mINSERT INTO "people" ("name", "id") VALUES ('usman8', 8)[0m
+D, [2011-05-21T19:43:41.778680 #6383] DEBUG -- :   [1m[35mAREL (0.3ms)[0m  INSERT INTO "people" ("name", "id") VALUES ('Hamed', 40)
+D, [2011-05-21T19:43:41.780051 #6383] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "people"[0m
+D, [2011-05-21T19:43:41.780481 #6383] DEBUG -- :   [1m[35mPerson Load (0.2ms)[0m  SELECT "people".* FROM "people"
